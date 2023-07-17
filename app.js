@@ -20,6 +20,8 @@ app.post("/", function(req,res){
     const firstName = req.body.fName;
     const lastName = req.body.lName;
     const email = req.body.email;
+    
+    
 
     // Mailchimp 
     const apiKey = "1bd0b625e642bc1224dcae5e1da24f45-us14";
@@ -46,14 +48,23 @@ app.post("/", function(req,res){
         method : "POST",
         auth: `prince:${apiKey}`
     }
-    const request = https.request(url, options, function(res){
-        res.on("data", function(data){
+    const request = https.request(url, options, function(response){ 
+        response.on("data", function(data){
             const serverResponse = JSON.parse(data);
             console.log(serverResponse);
         })
+        if(response.statusCode === 200){
+            res.sendFile(__dirname + "/success.html")
+        }
+        else{
+            res.sendFile(__dirname + "/failure.html")
+        }
     })
+
     request.write(jsonData);
     request.end();
+
+    
     
 })
 
