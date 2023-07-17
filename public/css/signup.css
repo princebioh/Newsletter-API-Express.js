@@ -1,0 +1,75 @@
+body {
+    background-color: #344a72;
+    font-family: "Roboto", sans-serif;
+  }
+  
+
+  
+  .login-box {
+    width: 360px;
+    height: 350px;
+    margin: auto;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 200px;
+    
+  }
+
+  
+  h1 {
+    text-align: center;
+    font-family: Tahoma;
+    text-align: center;
+    padding-top: 15px;
+  }
+  
+  form {
+    width: 300px;
+    margin-left: 20px;
+  }
+  
+  form label {
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  form input {
+    width: 100%;
+    height: 22px;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+    font-family: Verdana;
+  }
+
+  #btnSubmit {
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 65px;
+    border: none;
+    border-radius: 5px;
+    background-color: #49c1a2;
+    color: white;
+    font-size: 18px;
+  }
+
+  p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+  }
+  .para-2 {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin-top: -10px;
+  }
+  .para-2 a {
+    color: #49c1a2;
+  }
+  
+  
